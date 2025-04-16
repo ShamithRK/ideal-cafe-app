@@ -14,6 +14,7 @@ function Location() {
                 <strong>Address:</strong> MG Road, Mangalore, Karnataka 575001<br />
                 <strong>Hours:</strong> 10:00 AM – 10:00 PM<br />
                 <strong>Phone:</strong> +91-9876543210
+                console.log("Location component loaded");
               </Card.Text>
             </Card.Body>
           </Card>
