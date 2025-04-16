@@ -4,12 +4,12 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 function Location() {
   return (
     <Container className="my-5">
-      <h2 className="text-center mb-4">📍 Visit Our Café</h2>
+      <h2 className="text-center mb-4">📍 Visit Ideal Café</h2>
       <Row>
         <Col md={6}>
           <Card className="shadow mb-4">
             <Card.Body>
-              <Card.Title>Ideal Café - Mangalore</Card.Title>
+              <Card.Title>Ideal Café – Mangalore</Card.Title>
               <Card.Text>
                 <strong>Address:</strong> MG Road, Mangalore, Karnataka 575001<br />
                 <strong>Hours:</strong> 10:00 AM – 10:00 PM (All days)<br />

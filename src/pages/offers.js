@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, Badge } from 'react-bootstrap';
 const offers = [
   {
     title: 'Buy 1 Get 1 Free',
-    description: 'On all Sundaes every Tuesday!',
+    description: 'On all sundaes every Tuesday!',
     validTill: 'April 30, 2025',
     type: 'Limited Time',
   },

@@ -6,6 +6,11 @@ import Contact from './pages/Contact';
 import SignIn from './pages/SignIn';
 import CafeNavbar from './components/Navbar';
 import CheckoutPage from './pages/CheckoutPage';
+import Offers from './pages/Offers';
+import Location from './pages/Location';
+
+
+
 
 function App() {
   return (
@@ -18,6 +23,8 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/cart" element={<CartPage />} /> 
         <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/offers" element={<Offers />} />
+        <Route path="/location" element={<Location />} />
       </Routes>
     </Router>
   );
