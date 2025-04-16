@@ -8,7 +8,7 @@ import SignIn from './pages/SignIn';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import Offers from './pages/Offers';
-import Location from './pages/Location';
+import Location from './pages/Location'; // ✅ import with capital L
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/offers" element={<Offers />} />
-        <Route path="/location" element={<Location />} />
+        <Route path="/location" element={<Location />} /> {/* ✅ correct route */}
       </Routes>
     </Router>
   );
