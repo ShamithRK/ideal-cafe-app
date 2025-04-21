@@ -111,22 +111,26 @@ function MenuPage() {
                 style={{ height: '200px', objectFit: 'cover' }}
               />
               <Card.Body>
-                <Card.Title>{item.name}</Card.Title>
-                <Card.Text>{item.description}</Card.Text>
-                <h5>₹{item.price}</h5>
-                <Button variant="primary" onClick={() => addToCart(item)}>
-                  Add to Cart
-                </Button>
+  <Card.Title>{item.name}</Card.Title>
+  <Card.Text>{item.description}</Card.Text>
+  <h5>₹{item.price}</h5>
 
-                <ReactStars
-                count={5}
-                size={24}
-                activeColor="#ffd700"
-                value={ratings[item.name] || 0}
-                onChange={(newRating) => handleRatingChange(newRating, item.name)}
-                />
+  {/* ⭐ Star Rating */}
+  <div className="mb-3">
+    <ReactStars
+      count={5}
+      size={24}
+      activeColor="#ffd700"
+      value={ratings[item.name] || 0}
+      onChange={(newRating) => handleRatingChange(newRating, item.name)}
+    />
+  </div>
 
-              </Card.Body>
+  <Button variant="primary" onClick={() => addToCart(item)}>
+    Add to Cart
+  </Button>
+</Card.Body>
+
             </Card>
           </Col>
         ))}
