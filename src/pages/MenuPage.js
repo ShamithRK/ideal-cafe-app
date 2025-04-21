@@ -1,7 +1,7 @@
-import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { useCart } from '../context/CartContext';
 import ReactStars from 'react-rating-stars-component';
+import React, { useState } from 'react';
 import GadbadImg from '../assets/gadbad.jpg';
 import CoffeeImg from '../assets/coffee.jpg';
 import BrownieImg from '../assets/brownie.jpg';
@@ -85,17 +85,16 @@ const menuItems = [
     category: 'Snacks',
   },
 ];
-const [ratings, setRatings] = useState({});
-
-const handleRatingChange = (newRating, itemName) => {
-  setRatings((prev) => ({
-    ...prev,
-    [itemName]: newRating,
-  }));
-};
-
 
 function MenuPage() {
+  const [ratings, setRatings] = useState({});
+
+  const handleRatingChange = (newRating, itemName) => {
+    setRatings((prev) => ({
+      ...prev,
+      [itemName]: newRating,
+    }));
+  };
   const { addToCart } = useCart();
 
   return (
@@ -118,7 +117,7 @@ function MenuPage() {
                 <Button variant="primary" onClick={() => addToCart(item)}>
                   Add to Cart
                 </Button>
-                
+
                 <ReactStars
                 count={5}
                 size={24}
