@@ -22,7 +22,8 @@ function App() {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/offers" element={<Offers />} />
-        <Route path="/location" element={<Location />} /> {/* ✅ correct route */}
+        <Route path="/location" element={<Location />} />
+
       </Routes>
     </Router>
   );
