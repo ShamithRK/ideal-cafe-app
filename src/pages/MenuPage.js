@@ -13,6 +13,9 @@ import SandwichImg from '../assets/sandwich.jpg';
 import TiramisuImg from '../assets/tiramisu.jpg';
 import ChocolateSundaeImg from '../assets/chocolate-sundae.jpg';
 
+console.log("✅ MenuPage loaded");
+
+
 const menuItems = [
   {
     name: 'Gadbad Ice Cream',
