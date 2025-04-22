@@ -117,6 +117,8 @@ function MenuPage() {
 
   {/* ⭐ Star Rating */}
   <div className="mb-3">
+  console.log("Rendering stars for:", item.name);
+
     <ReactStars
       count={5}
       size={24}
